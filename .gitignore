@@ -1,0 +1,5 @@
+env/
+quiz_app/quiz_app/__pycache__
+quiz_app/student_quiz/migrations
+quiz_app/student_quiz/__pycache__
+db.sqlite3

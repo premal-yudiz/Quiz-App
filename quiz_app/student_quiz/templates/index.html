@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if 'student_login' in request.session.keys %}
+  <h1>Hello, {{obj.student_name}}</h1> 
+{% endif %}
+
+{% if obj.marks != 0 %}
+<h2 style="color: orangered;">You already taken quiz</h2>
+{% else %}
+    <h3>You can start your Quiz now!!!</h3>
+ <h2><a href="{% url 'question_test' %}"> <b> 👉 Start QUIZ 👈 </b></a></h2> 
+{% endif %}
+
+
+{% endblock content %}

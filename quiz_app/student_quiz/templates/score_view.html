@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container ">
+
+    <div class="card-columns" style="padding: 10px; margin: 20px;">
+        <div class="card" align="centre " style="width: 32rem; border:5px black solid">
+            <!-- <img class="card-img-top" src="http://kmit.in/emagazine/wp-content/uploads/2018/02/karnataka-results.jpg"
+                    alt="Card image cap"> -->
+            <div class="card-body">
+                <h5 class="card-title"> Hello, {{obj.student_name}}</h5>
+                <p class="card-text">Your Score is: {{obj.marks}}</p>
+                {% comment %} <p class="card-text">Incorrect answers: {{wrong}}</p>
+                <p class="card-text">Total questions: {{total}}</p> {% endcomment %}
+            </div>
+        </div>
+    </div>
+    <div>
+        <button onclick="window.location.href = '/index';">HOME</button>
+    </div>
+</div>
+
+{% endblock content %}

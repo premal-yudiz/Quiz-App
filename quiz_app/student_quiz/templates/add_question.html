@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+ 
+<div class="jumbotron container row">
+    <div class="col-md-6">
+        <h1>Add Question</h1>
+        <div class="card card-body">
+           <form action="" method="POST">
+              {% csrf_token %}
+                <div><label for="add questions">Enter questions :-</label><input type="text" name = 'question' required></div>
+                <div><label for="add option">option 1 :-</label><input type="text" name = 'op1' required></div>
+                <div><label for="add questions">option 2 :- </label><input type="text" name = 'op2' required></div>
+                <div><label for="add questions">option 3 :-</label><input type="text" name = 'op3' required></div>
+                <div><label for="add questions">option 4 :-</label><input type="text" name='op4' required></div>
+                <!-- <div><label for="add questions">option 1</label><input type="text" name='op4'></div> -->
+                <div><label for="answer">Answer :-</label><input type="text" name='ans'></div>
+             <input type="submit" name="Submit">
+          </form>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+ 
+{% endblock content %}

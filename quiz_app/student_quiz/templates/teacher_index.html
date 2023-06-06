@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h1>Welcome to Teacher Portal</h1>
+    <table border="solid">
+       
+        <tr>
+            <th>Student Name</th>
+            <th>Marks</th>
+        </tr>
+        {% for std in student%}
+        <tr>    
+            <td>{{std.student_name}}</td>
+            <td>{{std.marks}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}
